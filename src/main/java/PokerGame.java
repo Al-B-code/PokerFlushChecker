@@ -13,11 +13,9 @@ public class PokerGame {
             char lastLetterComp2 = cards[i+1].charAt(cards[i+1].length() - 1);
 
             if (lastLetterComp1 != lastLetterComp2){
-                isFlush = false;
+                return false;
             }
         }
-
-
         return isFlush;
     }
 
